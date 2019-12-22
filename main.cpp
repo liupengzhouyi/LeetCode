@@ -16,33 +16,30 @@ int main() {
     }
 
     object.push_back(0);
+
     for(int i=0;i<obj.size();i++)//size()容器中实际数据个数
     {
         object.push_back(obj[i]);
-        for (int l = 0; l > object.size(); l++) {
+        for (int l = 0; l < object.size(); l++) {
             cout << object[l] << " ";
         }
         cout << endl;
 
         for (int j = 0; j < object.size(); j++) {
             int t = obj[i] + object[j];
+            cout << "[" << t << "]";
             temp.push_back(t);
         }
 
-        for(int k=0;k<temp.size();k++)//size()容器中实际数据个数
+        for (int k = 0; k < temp.size(); k++)//size()容器中实际数据个数
         {
             object.push_back(temp[k]);
-            cout << temp[k] << " ";
+            // cout << temp[k] << " ";
         }
 
         temp.clear();
 
     }
-
-
-
-
-
 
     return 0;
 }
