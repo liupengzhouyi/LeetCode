@@ -7,9 +7,12 @@ using namespace std;
 
 void paly(int number) {
 
-
-
-
+    // 只有一位数
+    if (number == 1) {
+        cout << "1" << endl;
+    } else if (number == 0) {
+        cout << "0" << endl;
+    }
 
 }
 
