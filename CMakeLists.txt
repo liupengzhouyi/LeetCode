@@ -11,6 +11,8 @@ file(GLOB SOURCES
         001addTwoNumber/Node.h
         001addTwoNumber/AddTownumber.cpp
         001addTwoNumber/AddTownumber.h
+        aotu/test.cpp
+        aotu/test.h
         )
 
 add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} )

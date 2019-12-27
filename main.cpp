@@ -2,10 +2,12 @@
 #include <vector>
 #include "day01/paly.h"
 #include "001addTwoNumber/AddTownumber.h"
+#include "aotu/test.h"
 #include <math.h>
 
 using namespace std;
 
+/*
 void paly(int number) {
 
     // 只有一位数
@@ -16,23 +18,22 @@ void paly(int number) {
     }
 
 }
+*/
 
 
 int main() {
+    test * t = new test();
+    t->coutSomething();
 
-
-    AddTownumber * addTownumberByLP = new AddTownumber();
+    /*AddTownumber * addTownumberByLP = new AddTownumber();
 
     for (int i = 1; i <= 10; i++) {
         addTownumberByLP->addNumber(i);
     }
 
-
-
     cout << "====" << endl;
 
-    addTownumberByLP->printTree();
-
+    addTownumberByLP->printTree();*/
 
     /*vector<int> obj;
     vector<int> object;
