@@ -38,6 +38,8 @@ public:
     void setVector(const std::vector<int> &vector);
 
     std::vector<int> twoSumI(std::vector<int> numbers, int target);
+
+    std::vector<int> twoSumII(std::vector<int> numbers, int target);
 };
 
 

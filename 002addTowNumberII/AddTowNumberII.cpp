@@ -70,3 +70,29 @@ std::vector<int> AddTowNumberII::twoSumI(std::vector<int> numbers, int target) {
     }
     return newVecter;
 }
+
+std::vector<int> AddTowNumberII::twoSumII(std::vector<int> numbers, int target) {
+    std::vector<int> newVecter;
+    auto maxIndex = 0;
+    for (auto number : numbers) {
+        maxIndex = maxIndex + 1;
+    }
+    auto key = 0;
+    auto i = 0;
+    auto j = maxIndex-1;
+    //std::cout<< maxIndex << std::endl;
+    while(key != 1) {
+        auto sum = numbers[i] + numbers[j];
+        // std::cout << numbers[i] << " + " << numbers[j] << " = " << sum << std::endl;
+        if (sum == target) {
+            newVecter.push_back(i+1);
+            newVecter.push_back(j+1);
+            key = 1;
+        } else if (sum > target) {
+            j = j - 1;
+        } else if (sum < target) {
+            i = i + 1;
+        }
+    }
+    return newVecter;
+}
