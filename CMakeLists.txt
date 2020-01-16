@@ -15,7 +15,11 @@ file(GLOB SOURCES
         002addTowNumberII/run.cpp
         003Solution/Solution.cpp
         003Solution/Solution.h
+        003Solution/run.cpp
+        004ReverseVowels/ReverseVowels.cpp
+        004ReverseVowels/ReverseVowels.h
+        004ReverseVowels/run.cpp
         )
 
-add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} 003Solution/run.cpp 004ReverseVowels/ReverseVowels.cpp 004ReverseVowels/ReverseVowels.h)
+add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} )
 
