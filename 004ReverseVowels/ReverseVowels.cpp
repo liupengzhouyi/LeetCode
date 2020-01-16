@@ -36,3 +36,21 @@ std::string ReverseVowels::reverseVowels(std::string s) {
     }
     return s;
 }
+
+std::string ReverseVowels::reverseVowelsII(std::string s) {
+    std::string str2 = "";
+    for (int i=0;i<s.length();i++) {
+        if (s[i] == 'a' || s[i] == 'o' || s[i] == 'e' || s[i] == 'i' || s[i] == 'u'||s[i] == 'A' || s[i] == 'O' || s[i] == 'E' || s[i] == 'I' || s[i] == 'U') {
+            str2 = s[i] + str2;
+            s[i] = '+';
+        }
+    }
+    int j = 0;
+    for (int i=0;i<s.length();i++) {
+        if (s[i] == '+') {
+            s[i] = str2[j];
+            j = j + 1;
+        }
+    }
+    return s;
+}

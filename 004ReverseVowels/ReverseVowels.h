@@ -13,6 +13,8 @@ class ReverseVowels {
 public:
     std::string reverseVowels(std::string s);
 
+    std::string reverseVowelsII(std::string s);
+
 };
 
 
