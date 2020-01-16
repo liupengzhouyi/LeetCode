@@ -12,7 +12,10 @@ file(GLOB SOURCES
         aotu/test.h
         002addTowNumberII/AddTowNumberII.cpp
         002addTowNumberII/AddTowNumberII.h
+        002addTowNumberII/run.cpp
+        003Solution/Solution.cpp
+        003Solution/Solution.h
         )
 
-add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} 002addTowNumberII/run.cpp)
+add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} 003Solution/run.cpp)
 
