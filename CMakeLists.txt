@@ -14,5 +14,5 @@ file(GLOB SOURCES
         002addTowNumberII/AddTowNumberII.h
         )
 
-add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} )
+add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} 002addTowNumberII/run.cpp)
 
