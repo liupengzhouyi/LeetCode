@@ -12,6 +12,8 @@ class ValidPalindrome {
 
 public:
     bool validPalindrome(std::string s);
+
+    bool validPalindromeII(std::string s);
 };
 
 
