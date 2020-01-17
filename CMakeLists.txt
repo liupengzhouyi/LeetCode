@@ -19,6 +19,8 @@ file(GLOB SOURCES
         004ReverseVowels/ReverseVowels.cpp
         004ReverseVowels/ReverseVowels.h
         004ReverseVowels/run.cpp
+        005ValidPalindrome/ValidPalindrome.cpp 005ValidPalindrome/ValidPalindrome.h 005ValidPalindrome/run.cpp
+
         )
 
 add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} )
