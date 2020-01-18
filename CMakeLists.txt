@@ -23,5 +23,5 @@ file(GLOB SOURCES
 
         )
 
-add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} 006Merge/Merge.cpp 006Merge/Merge.h 006Merge/run.cpp)
+add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} 006Merge/Merge.cpp 006Merge/Merge.h 006Merge/run.cpp 007Rotate/Rotate.cpp 007Rotate/Rotate.h)
 
