@@ -20,8 +20,11 @@ file(GLOB SOURCES
         004ReverseVowels/ReverseVowels.h
         004ReverseVowels/run.cpp
         005ValidPalindrome/ValidPalindrome.cpp 005ValidPalindrome/ValidPalindrome.h 005ValidPalindrome/run.cpp
-
+        006Merge/Merge.cpp 006Merge/Merge.h 006Merge/run.cpp
+        007Rotate/Rotate.cpp 007Rotate/Rotate.h
+        008HasCycle/HasCycle.cpp 008HasCycle/HasCycle.h 008HasCycle/ListNode.cpp 008HasCycle/ListNode.h
+        009FindLongestWord/FindLongestWord.cpp 009FindLongestWord/FindLongestWord.h
         )
 
-add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} 006Merge/Merge.cpp 006Merge/Merge.h 006Merge/run.cpp 007Rotate/Rotate.cpp 007Rotate/Rotate.h 008HasCycle/HasCycle.cpp 008HasCycle/HasCycle.h 008HasCycle/ListNode.cpp 008HasCycle/ListNode.h)
+add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} )
 
