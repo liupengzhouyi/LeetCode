@@ -24,6 +24,8 @@ file(GLOB SOURCES
         007Rotate/Rotate.cpp 007Rotate/Rotate.h
         008HasCycle/HasCycle.cpp 008HasCycle/HasCycle.h 008HasCycle/ListNode.cpp 008HasCycle/ListNode.h
         009FindLongestWord/FindLongestWord.cpp 009FindLongestWord/FindLongestWord.h
+        010FindKthLargest/FindKthLargest.cpp 010FindKthLargest/FindKthLargest.h
+
         )
 
 add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} )

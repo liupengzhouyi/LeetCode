@@ -5,6 +5,7 @@
 #include <iostream>
 #include "Node.h"
 
+
 Node::Node(int number, int index){
     this->setNumber(number);
     this->setIndex(index);
