@@ -28,5 +28,5 @@ file(GLOB SOURCES
 
         )
 
-add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} )
+add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} 011TopKFrequent/TopKFrequent.cpp 011TopKFrequent/TopKFrequent.h)
 
