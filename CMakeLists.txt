@@ -30,5 +30,5 @@ file(GLOB SOURCES
         013FindContentChildren/FindContentChildren.cpp 013FindContentChildren/FindContentChildren.h
         )
 
-add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} )
+add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} 014EraseOverlapIntervals/EraseOverlapIntervals.cpp 014EraseOverlapIntervals/EraseOverlapIntervals.h)
 
