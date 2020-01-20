@@ -9,6 +9,7 @@
 #include <vector>
 
 class SortColors {
+public:
     void sortColors(std::vector<int>& nums);
 };
 

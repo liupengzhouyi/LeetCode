@@ -25,8 +25,10 @@ file(GLOB SOURCES
         008HasCycle/HasCycle.cpp 008HasCycle/HasCycle.h 008HasCycle/ListNode.cpp 008HasCycle/ListNode.h
         009FindLongestWord/FindLongestWord.cpp 009FindLongestWord/FindLongestWord.h
         010FindKthLargest/FindKthLargest.cpp 010FindKthLargest/FindKthLargest.h
-
+        011TopKFrequent/TopKFrequent.cpp 011TopKFrequent/TopKFrequent.h
+        012SortColors/SortColors.cpp 012SortColors/SortColors.h
+        013FindContentChildren/FindContentChildren.cpp 013FindContentChildren/FindContentChildren.h
         )
 
-add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} 011TopKFrequent/TopKFrequent.cpp 011TopKFrequent/TopKFrequent.h 012SortColors/SortColors.cpp 012SortColors/SortColors.h)
+add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} )
 
