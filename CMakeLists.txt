@@ -33,5 +33,5 @@ file(GLOB SOURCES
 
         )
 
-add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} 015FindMinArrowShots/FindMinArrowShots.cpp 015FindMinArrowShots/FindMinArrowShots.h)
+add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} 015FindMinArrowShots/FindMinArrowShots.cpp 015FindMinArrowShots/FindMinArrowShots.h 016ReconstructQueue/ReconstructQueue.cpp 016ReconstructQueue/ReconstructQueue.h)
 
