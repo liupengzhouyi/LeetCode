@@ -37,5 +37,5 @@ file(GLOB SOURCES
 
         )
 
-add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} 017MaxProfit/run.cpp 018MaxProfitII/MaxProfitII.cpp 018MaxProfitII/MaxProfitII.h 019IsSubsequence/IsSubsequence.cpp 019IsSubsequence/IsSubsequence.h)
+add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} 017MaxProfit/run.cpp 018MaxProfitII/MaxProfitII.cpp 018MaxProfitII/MaxProfitII.h 019IsSubsequence/IsSubsequence.cpp 019IsSubsequence/IsSubsequence.h 017CheckPossibility/CheckPossibility.cpp 017CheckPossibility/CheckPossibility.h)
 
