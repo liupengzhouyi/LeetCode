@@ -29,9 +29,13 @@ file(GLOB SOURCES
         012SortColors/SortColors.cpp 012SortColors/SortColors.h
         013FindContentChildren/FindContentChildren.cpp 013FindContentChildren/FindContentChildren.h
         014EraseOverlapIntervals/EraseOverlapIntervals.cpp 014EraseOverlapIntervals/EraseOverlapIntervals.h
+        015FindMinArrowShots/FindMinArrowShots.cpp 015FindMinArrowShots/FindMinArrowShots.h
+        016ReconstructQueue/ReconstructQueue.cpp 016ReconstructQueue/ReconstructQueue.h
+        017MaxProfit/MaxProfit.cpp 017MaxProfit/MaxProfit.h
+
 
 
         )
 
-add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} 015FindMinArrowShots/FindMinArrowShots.cpp 015FindMinArrowShots/FindMinArrowShots.h 016ReconstructQueue/ReconstructQueue.cpp 016ReconstructQueue/ReconstructQueue.h)
+add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} 017MaxProfit/run.cpp)
 
