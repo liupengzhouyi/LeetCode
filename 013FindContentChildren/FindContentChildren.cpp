@@ -4,7 +4,7 @@
 
 #include "FindContentChildren.h"
 
-int FindContentChildren::findContentChildren(std::vector<int> &g, vector<int> &s) {
+int FindContentChildren::findContentChildren(std::vector<int> &g, std::vector<int> &s) {
     if (g.size() == 0 || s.size() == 0) {
         return 0;
     } else {

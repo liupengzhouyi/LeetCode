@@ -31,11 +31,16 @@ file(GLOB SOURCES
         014EraseOverlapIntervals/EraseOverlapIntervals.cpp 014EraseOverlapIntervals/EraseOverlapIntervals.h
         015FindMinArrowShots/FindMinArrowShots.cpp 015FindMinArrowShots/FindMinArrowShots.h
         016ReconstructQueue/ReconstructQueue.cpp 016ReconstructQueue/ReconstructQueue.h
-        017MaxProfit/MaxProfit.cpp 017MaxProfit/MaxProfit.h
-
+        017MaxProfit/MaxProfit.cpp 017MaxProfit/MaxProfit.h 017MaxProfit/run.cpp
+        018MaxProfitII/MaxProfitII.cpp 018MaxProfitII/MaxProfitII.h
+        019IsSubsequence/IsSubsequence.cpp 019IsSubsequence/IsSubsequence.h
+        017CheckPossibility/CheckPossibility.cpp 017CheckPossibility/CheckPossibility.h
+        020MySprt/MySqrt.cpp 020MySprt/MySqrt.h
+        021NextGreatestLetter/NextGreatestLetter.cpp 021NextGreatestLetter/NextGreatestLetter.h
+        022SingleNonDuplicate/SingleNonDuplicate.cpp 022SingleNonDuplicate/SingleNonDuplicate.h
 
 
         )
 
-add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} 017MaxProfit/run.cpp 018MaxProfitII/MaxProfitII.cpp 018MaxProfitII/MaxProfitII.h 019IsSubsequence/IsSubsequence.cpp 019IsSubsequence/IsSubsequence.h 017CheckPossibility/CheckPossibility.cpp 017CheckPossibility/CheckPossibility.h 020MySprt/MySqrt.cpp 020MySprt/MySqrt.h 021NextGreatestLetter/NextGreatestLetter.cpp 021NextGreatestLetter/NextGreatestLetter.h)
+add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} 023DiffWaysToCompute/DiffWaysToCompute.cpp 023DiffWaysToCompute/DiffWaysToCompute.h 024FindMin/FindMin.cpp 024FindMin/FindMin.h)
 
