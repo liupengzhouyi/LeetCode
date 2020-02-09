@@ -42,5 +42,5 @@ file(GLOB SOURCES
 
         )
 
-add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} 023DiffWaysToCompute/DiffWaysToCompute.cpp 023DiffWaysToCompute/DiffWaysToCompute.h 024FindMin/FindMin.cpp 024FindMin/FindMin.h)
+add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} 023DiffWaysToCompute/DiffWaysToCompute.cpp 023DiffWaysToCompute/DiffWaysToCompute.h 024FindMin/FindMin.cpp 024FindMin/FindMin.h 025ShortestPathBinaryMatrix/ShortestPathBinaryMatrix.cpp 025ShortestPathBinaryMatrix/ShortestPathBinaryMatrix.h)
 
