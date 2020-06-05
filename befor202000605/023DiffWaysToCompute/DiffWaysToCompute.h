@@ -13,7 +13,7 @@ class DiffWaysToCompute {
 private:
     std::map<std::pair<int,int>,std::vector<int>> m;
 public:
-    std::vector<int> diffWaysToCompute(std::string input);
+    std::vector<int> diffWaysToCompute(std::string input1);
 
     std::vector<int> ways(const std::string& input,int left,int right);
 

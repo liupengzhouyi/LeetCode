@@ -1,24 +1,20 @@
 #include <iostream>
-#include <vector>
-#include "022SingleNonDuplicate/SingleNonDuplicate.h"
+#include "026MainElement/MainElement.h"
 
 
 using namespace std;
 
 int main() {
-    SingleNonDuplicate singleNonDuplicate;
 
-    std::vector<int> vector;
-    vector.push_back(1);
-    vector.push_back(1);
-    vector.push_back(3);
-    vector.push_back(3);
-    vector.push_back(4);
-    vector.push_back(4);
-    vector.push_back(5);
-    vector.push_back(5);
-    vector.push_back(2);
-    std::cout << singleNonDuplicate.singleNonDuplicate(vector);
-
+    MainElement mainElement = MainElement();
+    std::vector<int> list;
+    list.push_back(2);
+    list.push_back(2);
+    list.push_back(1);
+    list.push_back(1);
+    list.push_back(1);
+    list.push_back(2);
+    list.push_back(2);
+    std::cout << mainElement.majorityElement(list);
     return 0;
 }

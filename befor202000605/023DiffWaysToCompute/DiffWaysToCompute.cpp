@@ -3,9 +3,10 @@
 //
 
 #include "DiffWaysToCompute.h"
+#include <string>
 
-std::vector<int> DiffWaysToCompute::diffWaysToCompute(std::string input) {
-    return this->ways(input, 0,input.size());
+std::vector<int> DiffWaysToCompute::diffWaysToCompute(std::string input1) {
+    return this->ways(input1, 0, input1.size());
 }
 
 std::vector<int> DiffWaysToCompute::ways(const std::string &input, int left, int right) {
