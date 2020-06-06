@@ -1,20 +1,25 @@
 #include <iostream>
-#include "026MainElement/MainElement.h"
+#include "c20200507/Paly605/Paly605.h"
 
 
 using namespace std;
 
 int main() {
 
-    MainElement mainElement = MainElement();
+    Paly605 paly605 = Paly605();
     std::vector<int> list;
-    list.push_back(2);
-    list.push_back(2);
     list.push_back(1);
+    list.push_back(0);
+    list.push_back(0);
+    list.push_back(0);
     list.push_back(1);
+    list.push_back(0);
+    list.push_back(0);
+    list.push_back(0);
     list.push_back(1);
-    list.push_back(2);
-    list.push_back(2);
-    std::cout << mainElement.majorityElement(list);
+    list.push_back(0);
+    list.push_back(0);
+    list.push_back(1);
+    paly605.canPlaceFlowers(list, 2);
     return 0;
 }
