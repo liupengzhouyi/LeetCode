@@ -42,5 +42,5 @@ file(GLOB SOURCES
 
         )
 
-add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} befor202000605/023DiffWaysToCompute/DiffWaysToCompute.cpp befor202000605/023DiffWaysToCompute/DiffWaysToCompute.h befor202000605/024FindMin/FindMin.cpp befor202000605/024FindMin/FindMin.h befor202000605/025ShortestPathBinaryMatrix/ShortestPathBinaryMatrix.cpp befor202000605/025ShortestPathBinaryMatrix/ShortestPathBinaryMatrix.h befor202000605/026MainElement/MainElement.cpp befor202000605/026MainElement/MainElement.h c20200507/Abacus/Abacus.cpp c20200507/Abacus/Abacus.h)
+add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} befor202000605/023DiffWaysToCompute/DiffWaysToCompute.cpp befor202000605/023DiffWaysToCompute/DiffWaysToCompute.h befor202000605/024FindMin/FindMin.cpp befor202000605/024FindMin/FindMin.h befor202000605/025ShortestPathBinaryMatrix/ShortestPathBinaryMatrix.cpp befor202000605/025ShortestPathBinaryMatrix/ShortestPathBinaryMatrix.h befor202000605/026MainElement/MainElement.cpp befor202000605/026MainElement/MainElement.h c20200507/Abacus/Abacus.cpp c20200507/Abacus/Abacus.h c20200507/ArrayNumbers/ArrayNumbers.cpp c20200507/ArrayNumbers/ArrayNumbers.h c20200507/DuplicateZeros/DuplicateZeros.cpp c20200507/DuplicateZeros/DuplicateZeros.h)
 
