@@ -17,6 +17,8 @@ void DuplicateZeros::duplicateZeros(std::vector<int> &arr) {
             break;
         }
     }
+
+
     for (auto i = 0; i < arr.size(); i++) {
         arr[i] = newArr[i];
     }
