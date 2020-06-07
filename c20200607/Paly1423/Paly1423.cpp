@@ -2,9 +2,9 @@
 // Created by 刘鹏 on 2020/6/7.
 //
 
-#include "Play1423.h"
+#include "Paly1423.h"
 
-int Play1423::maxScore(std::vector<int> &cardPoints, int k) {
+int Paly1423::maxScore(std::vector<int> &cardPoints, int k) {
     auto sum = 0, max = 0;
     if (k >= cardPoints.size()) {
         for (auto item : cardPoints) {
