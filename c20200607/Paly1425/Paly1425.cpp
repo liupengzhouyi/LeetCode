@@ -6,7 +6,7 @@
 #include "Paly1425.h"
 
 int Paly1425::constrainedSubsetSum(std::vector<int> &nums, int k) {
-    int f[100005], ans = -99999;//f即为nums[i]结尾的子序列和的最大值
+    int f[1000Paly2205], ans = -99999;//f即为nums[i]结尾的子序列和的最大值
     std::deque<std::pair<int,int> > s;
     int n = nums.size();
     for(int i = 0; i < n; i++){
