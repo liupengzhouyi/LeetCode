@@ -9,7 +9,7 @@ int Paly28::strStr(std::string haystack, std::string needle) {
     if(!haystack.size()) return -1;
     //先构造pattern
     int j = -1, i = 0;//j在后面，i在前面
-    vector<int> b(needle.size() + 1);
+    std::vector<int> b(needle.size() + 1);
     b[i] = j;
     while(i < needle.size())
     {
