@@ -6,7 +6,7 @@
 
 ListNode25 *Paly25::reverseKGroup(ListNode25 *head, int k) {
     if(k <= 1 || head == nullptr) return head;
-    ListNode25* flag = new ListNode25(0, head);
+    ListNode25* flag = new ListNode25(0);
     int i = 0;
     ListNode25* pre = flag;//本k个节点之前，已经反转完的节点的最后一个
     ListNode25* queueH = flag;//本轮k个节点的开头第一个
