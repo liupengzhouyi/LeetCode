@@ -12,6 +12,8 @@
 class Paly28 {
 public:
     int strStr(std::string haystack, std::string needle);
+
+
 };
 
 

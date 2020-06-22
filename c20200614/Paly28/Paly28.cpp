@@ -4,29 +4,59 @@
 
 #include "Paly28.h"
 
-int Paly28::strStr(std::string haystack, std::string needle) {
-    if(!needle.size()) return 0;
-    if(!haystack.size()) return -1;
-    //先构造pattern
-    int j = -1, i = 0;//j在后面，i在前面
-    std::vector<int> b(needle.size() + 1);
-    b[i] = j;
-    while(i < needle.size())
-    {
-        while(j >= 0 && needle[i] != needle[j]) j = b[j];
-        i++, j++;
-        b[i] = j;
-    }
-
-    j = 0, i = 0; //j这回是text的， i是pattern的
-    while(j < haystack.size())
-    {
-        while(i >= 0 && needle[i] != haystack[j]) i = b[i];
-        i++, j++;
-        if(i == needle.size())
-        {
-            return j - needle.size();
+void getNextVal(int* nextVal,std::string& s){
+    int j=0,i=1;
+    nextVal[0]=0;
+    int size=s.size();
+    while(i<size&&j<size){
+        if(s[i]==s[j]){
+            nextVal[i]=j+1;
+            i++;
+            j++;
+        }else{
+            if(j==0){
+                nextVal[i]=0;
+                i++;
+            }else{
+                j=nextVal[j-1];//找到上一個可以匹配的前綴，為下一次判斷是否為連續前綴做準備
+            }
         }
     }
-    return -1;
 }
+
+int Paly28::strStr(std::string haystack, std::string needle) {
+    if(needle.size()==0) return 0;
+    int nsize=needle.size();
+    int hsize=haystack.size();
+    int pos=-1;
+    int nextVal[nsize];
+    getNextVal(nextVal,needle);
+    int i=0,j=0;
+    while(i<hsize){//套兩次循環是因爲j==0時是兩種操作的過度點：從找前綴（内循環）變成從前往後綫性掃描起點（外循環）
+        if(haystack[i]==needle[j]){//第一位匹配成功
+            i++;
+            j++;
+            while(i<hsize&&j<nsize){//注意内部循環也要判斷i，所有下標都要檢查
+                if(haystack[i]==needle[j]){
+                    i++;
+                    j++;
+                }
+                else{
+                    if(j==0){//相當於從頭開始匹配，進入外循環模式，一位一位往後移比較第一位
+                        break;
+                    }
+                    j=nextVal[j-1];
+                    continue;//繼續尋找可能前綴的下一位
+                }
+            }
+        }
+        if(j>=nsize){
+            pos=i-nsize;//因爲匹配完成了，所以i在單詞最後
+            break;
+        }
+        i++;
+    }
+    return pos;
+}
+
+
