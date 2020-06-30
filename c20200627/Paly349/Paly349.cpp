@@ -31,3 +31,19 @@
     }
     return returnList;
 }
+
+void rotate(::std::vector<::std::vector<int>>& matrix) {
+    ::std::vector<::std::vector<int>> newMatrix;
+    int index = 0;
+    for (int i=0;i<matrix[0].size();i++) {
+        ::std::vector<int> temp;
+        for (int j=matrix.size()-1;j>=0;j--) {
+            ::std::cout << matrix[j][i] << " ";
+            temp.push_back(matrix[j][i]);
+        }
+        newMatrix.push_back(temp);
+        index = index + 1;
+        ::std::cout << ::std::endl;
+    }
+    matrix = newMatrix;
+}
