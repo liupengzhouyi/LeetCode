@@ -10,7 +10,7 @@
 
 class PAly378 {
 
-    int kthSmallest(::std::vector<::std::vector<int>>& matrix, int k)
+    int kthSmallest(::std::vector<::std::vector<int>>& matrix, int k);
 
 };
 
