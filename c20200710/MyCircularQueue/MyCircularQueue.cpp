@@ -18,7 +18,7 @@ bool MyCircularQueue::enQueue(int value) {
         if (head == nullptr) {
             head = new Node20200710();
             head->value = value;
-            head->next == nullptr;
+            // head->next == nullptr;
             a = head;
             b = head;
         } else {

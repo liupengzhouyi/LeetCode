@@ -23,4 +23,5 @@ int Paly1425::constrainedSubsetSum(std::vector<int> &nums, int k) {
         while(!s.empty() && s.front().second <= i - k) s.pop_front();
     }
     return ans;*/
+    return 0;
 }

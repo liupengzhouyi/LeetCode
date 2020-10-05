@@ -148,6 +148,6 @@ file(GLOB SOURCES
         c20200710/MyCircularQueue/MyCircularQueue.h
         )
 
-add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES} 
-        )
+add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES}
+        c20201005/thread-1/TestThread1.cpp c20201005/thread-1/TestThread1.h)
 
