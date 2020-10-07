@@ -25,8 +25,8 @@ int main() {
     time_t first, second;
     first = time(NULL);
     for (int i = 0; i < 100000; i++) {
-        //std::thread thread(&Greet::SayHello, &greet, "C++11");
-        //thread.join();
+        std::thread thread(&Greet::SayHello, &greet, "C++11");
+        thread.join();
         //greet.SayHello("C++11");
     }
     second = time(NULL);

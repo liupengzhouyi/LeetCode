@@ -149,5 +149,5 @@ file(GLOB SOURCES
         )
 
 add_executable(LeetCode main.cpp ${SOURCES_FILES} ${SOURCES}
-        c20201005/thread-1/TestThread1.cpp c20201005/thread-1/TestThread1.h)
+        c20201005/thread-1/TestThread1.cpp c20201005/thread-1/TestThread1.h c20201007/Play18/BrerkfastNumber.cpp c20201007/Play18/BrerkfastNumber.h)
 
